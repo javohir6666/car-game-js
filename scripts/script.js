@@ -1,6 +1,5 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
-const welcome_name = document.getElementById("welcome");
 // var firstname = prompt("Your name?")
 // if (firstname != null) {
 //     document.getElementById("welcome").innerHTML =
@@ -22,7 +21,6 @@ function jump(){
 let asAlive = setInterval(function(){
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
-
     if(cactusLeft < 90 && cactusLeft > 0 && dinoTop >= 210){
         alert("GAME OVER :(")
     }
